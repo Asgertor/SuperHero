@@ -58,13 +58,12 @@ public class SuperHero {
         return yearOfOrigin;
     }
 
-    @Override
     public String toString() {
-        return  "\nname= " + name +
-                "\nsuperHeroName= " + superHeroName +
-                "\nrace= " + race +
-                "\nsuperPower= " + superPower +
-                "\npowerLevel= " + powerLevel +
-                "\nyearOfOrigin= " + yearOfOrigin;
+        return  "\nReal name_ " + name +
+                "\nSuperheroname: " + superHeroName +
+                "\nRace: " + race +
+                "\nSuperpower: " + superPower +
+                "\nPowerlevel: " + powerLevel +
+                "\nYear of origin: " + yearOfOrigin;
     }
 }
