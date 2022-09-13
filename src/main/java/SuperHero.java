@@ -24,7 +24,7 @@ public class SuperHero {
     public void setName(String name) {
         this.name = name;
     }
-    public void set(String superHeroName) {
+    public void setSuperHeroName(String superHeroName) {
         this.superHeroName = superHeroName;
     }
     public void setRace(String race) {
@@ -59,7 +59,7 @@ public class SuperHero {
     }
 
     public String toString() {
-        return  "\nReal name_ " + name +
+        return  "\nReal name: " + name +
                 "\nSuperheroname: " + superHeroName +
                 "\nRace: " + race +
                 "\nSuperpower: " + superPower +
