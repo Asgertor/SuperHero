@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="Added database" />
+    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="workspace vil også committes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +68,7 @@
       <updated>1662972121566</updated>
       <workItem from="1662972122926" duration="3478000" />
       <workItem from="1663071627873" duration="5311000" />
+      <workItem from="1663744994120" duration="5014000" />
     </task>
     <task id="LOCAL-00001" summary="Added menu options">
       <created>1663072604825</created>
@@ -92,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663075512290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="workspace vil også committes">
+      <created>1663077877649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663077877649</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added menu options" />
     <MESSAGE value="Added database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database" />
+    <MESSAGE value="workspace vil også committes" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace vil også committes" />
   </component>
 </project>

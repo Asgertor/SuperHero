@@ -12,6 +12,7 @@ public class Main {
                 Menu options:
                 1. New superhero
                 2. View current superheroes
+                3. Search for a superhero
                 9. quit program
                 """);
             int userInput = sc.nextInt();
@@ -35,10 +36,27 @@ public class Main {
             }
             else if (userInput == 2) {
                 for (SuperHero superHero: db.getAllSuperheroes()) {
-                    System.out.println(superHero);
+                    System.out.printf("%S \n", superHero);
                 }
                 
-            } else {
+            }
+
+            //Superhero search
+            else if (userInput == 3){
+                System.out.println("Type real name of the superhero you wish to find");
+                String searchName = sc.nextLine();
+                if (!db.searchSuperheroes(searchName).isEmpty()){
+                    System.out.println("Superheroe found!");
+                    for (SuperHero s : db.searchSuperheroes(searchName)) {
+                        System.out.println(s + "\n");
+                    }
+                }
+                else {
+                    System.out.println("Nothing found");
+                }
+
+            }
+            else {
                 System.exit(0);
             }
         }

@@ -15,4 +15,23 @@ public class Database {
         return superHeroes;
     }
 
+    public ArrayList<SuperHero> searchSuperheroes (String name) {
+        ArrayList<SuperHero> searchResult = new ArrayList<>();
+        for (SuperHero i: superHeroes) {
+            if(i.getSuperHeroName().contains(name)) {
+                searchResult.add(i);
+            }
+        }
+        return searchResult;
+    }
+    public void deleteSuperHero(String superHeroName){
+        int foundIndex = -1;
+        for (int i = 0; i < superHeroes.size(); i++) {
+            if (superHeroes.get(i).getSuperHeroName().equals(superHeroName)) {
+                foundIndex = i;
+            }
+        }
+        superHeroes.remove(foundIndex);
+    }
+
 }
