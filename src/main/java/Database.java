@@ -1,3 +1,4 @@
+import javax.xml.namespace.QName;
 import java.util.ArrayList;
 
 public class Database {
@@ -18,16 +19,16 @@ public class Database {
     public ArrayList<SuperHero> searchSuperheroes (String name) {
         ArrayList<SuperHero> searchResult = new ArrayList<>();
         for (SuperHero i: superHeroes) {
-            if(i.getSuperHeroName().contains(name)) {
+            if(i.getName().contains(name)) {
                 searchResult.add(i);
             }
         }
         return searchResult;
     }
-    public void deleteSuperHero(String superHeroName){
+    public void deleteSuperHero(String name){
         int foundIndex = -1;
         for (int i = 0; i < superHeroes.size(); i++) {
-            if (superHeroes.get(i).getSuperHeroName().equals(superHeroName)) {
+            if (superHeroes.get(i).getSuperHeroName().equals(name)) {
                 foundIndex = i;
             }
         }

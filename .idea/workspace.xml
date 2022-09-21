@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="workspace vil også committes">
+    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="Added search function">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
@@ -68,7 +70,8 @@
       <updated>1662972121566</updated>
       <workItem from="1662972122926" duration="3478000" />
       <workItem from="1663071627873" duration="5311000" />
-      <workItem from="1663744994120" duration="5014000" />
+      <workItem from="1663744994120" duration="9287000" />
+      <workItem from="1663777680975" duration="3971000" />
     </task>
     <task id="LOCAL-00001" summary="Added menu options">
       <created>1663072604825</created>
@@ -105,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663077877649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added search function">
+      <created>1663752540360</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663752540360</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +148,7 @@
     <MESSAGE value="Added menu options" />
     <MESSAGE value="Added database" />
     <MESSAGE value="workspace vil også committes" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace vil også committes" />
+    <MESSAGE value="Added search function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search function" />
   </component>
 </project>
