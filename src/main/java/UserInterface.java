@@ -14,6 +14,7 @@ public class UserInterface {
                     2. View current superheroes
                     3. Search for a superhero
                     4. Edit superhero
+                    5. Delete superhero
                     
                     9. quit program
                     """);
@@ -28,6 +29,7 @@ public class UserInterface {
             case 2 -> viewCurrentSuperheroes();
             case 3 -> searchSuperHero();
             case 4 -> editSuperHero();
+//            case 5 -> deleteSuperhero();
             case 9 -> System.exit(0);
         }
     }
@@ -46,18 +48,18 @@ public class UserInterface {
         System.out.print("Superpower:");
         String superPower = sc.nextLine();
 
-        System.out.print("Powerlevel:");
-        double powerlevel = readDouble();
+        System.out.print("Power level:");
+        double powerLevel = readDouble();
 
         System.out.print("Year of origin:");
         int yearOfOrigin = readInt();
 
-        db.addSuperHero(realName, superHeroName, race, superPower, powerlevel, yearOfOrigin);
+        db.addSuperHero(realName, superHeroName, race, superPower, powerLevel, yearOfOrigin);
         System.out.println("\nSuperhero stored!\n");
     }
 
     public void viewCurrentSuperheroes(){
-        System.out.printf("Found %s superheoes!", db.getAllSuperheroes().size());
+        System.out.printf("Found %s superheroes!", db.getAllSuperheroes().size());
         for (SuperHero superHero : db.getAllSuperheroes()) {
             System.out.printf("\nHere is a list of them:%s \n", superHero);
         }
@@ -86,18 +88,18 @@ public class UserInterface {
                 System.out.println();
             }
             System.out.println("Type number of superhero you wish to edit");
-            int heroNumber = readInt();
-            SuperHero editSuperhero = searchResult.get(heroNumber - 1);
+            int numberOfHeroes = readInt();
+            SuperHero editSuperhero = searchResult.get(numberOfHeroes - 1);
 
             System.out.println("Type new data and press ENTER. If you do not wish to edit data press Enter.");
 
             System.out.println("Real name: " + editSuperhero.getName());
-            String newCivilianName = sc.nextLine();
-            if (!newCivilianName.isEmpty()){
-                editSuperhero.setName(newCivilianName);
+            String name = sc.nextLine();
+            if (!name.isEmpty()){
+                editSuperhero.setName(name);
             }
 
-            System.out.println("Superheroname: " + editSuperhero.getSuperHeroName());
+            System.out.println("Superhero name: " + editSuperhero.getSuperHeroName());
             String updatedSuperHeroName = sc.nextLine();
             if (!updatedSuperHeroName.isEmpty()){
                 editSuperhero.setSuperHeroName(updatedSuperHeroName);
@@ -114,7 +116,7 @@ public class UserInterface {
             if (!newSuperpower.isEmpty()){
                 editSuperhero.setSuperPower(newSuperpower);
             }
-            System.out.println("Powerlevel: " + editSuperhero.getPowerLevel());
+            System.out.println("Power level: " + editSuperhero.getPowerLevel());
             String updatedPowerLevel = sc.nextLine();
             if (!updatedPowerLevel.isEmpty()){
                 editSuperhero.setPowerLevel(Double.parseDouble(updatedPowerLevel));
@@ -136,6 +138,20 @@ public class UserInterface {
             System.out.println("No superhero found with the name: " + searchName + "\n");
         }
     }
+
+    //TODO
+//    public void deleteSuperhero(){
+//        System.out.println("Type real name of the superhero you wish to delete");
+//        String searchName = sc.nextLine();
+//        if (!db.searchSuperheroes(searchName).isEmpty()) {
+//            System.out.println("Superheroes found!");
+//            for (SuperHero s : db.searchSuperheroes(searchName)) {
+//                db.deleteSuperHero(s);
+//            }
+//        } else {
+//            System.out.println("Nothing found");
+//        }
+//    }
     public int readInt() {
         while(!sc.hasNextInt()) {
             String text = sc.nextLine();

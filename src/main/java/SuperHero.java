@@ -14,13 +14,7 @@ public class SuperHero {
         this.powerLevel = powerLevel;
         this.yearOfOrigin = yearOfOrigin;
     }
-    public SuperHero(String name, String race, String superPower, double powerLevel, int yearOfOrigin){
-        this.name = name;
-        this.race = race;
-        this.superPower = superPower;
-        this.powerLevel = powerLevel;
-        this.yearOfOrigin = yearOfOrigin;
-    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -60,10 +54,10 @@ public class SuperHero {
 
     public String toString() {
         return  "\nReal name: " + name +
-                "\nSuperheroname: " + superHeroName +
+                "\nSuperhero name: " + superHeroName +
                 "\nRace: " + race +
                 "\nSuperpower: " + superPower +
-                "\nPowerlevel: " + powerLevel +
+                "\nPower level: " + powerLevel +
                 "\nYear of origin: " + yearOfOrigin;
     }
 }
