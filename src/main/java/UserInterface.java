@@ -29,7 +29,7 @@ public class UserInterface {
             case 2 -> viewCurrentSuperheroes();
             case 3 -> searchSuperHero();
             case 4 -> editSuperHero();
-//            case 5 -> deleteSuperhero();
+            case 5 -> deleteSuperhero();
             case 9 -> System.exit(0);
         }
     }
@@ -140,18 +140,16 @@ public class UserInterface {
     }
 
     //TODO
-//    public void deleteSuperhero(){
-//        System.out.println("Type real name of the superhero you wish to delete");
-//        String searchName = sc.nextLine();
-//        if (!db.searchSuperheroes(searchName).isEmpty()) {
-//            System.out.println("Superheroes found!");
-//            for (SuperHero s : db.searchSuperheroes(searchName)) {
-//                db.deleteSuperHero(s);
-//            }
-//        } else {
-//            System.out.println("Nothing found");
-//        }
-//    }
+    public void deleteSuperhero(){
+        System.out.println("Type real name of the superhero you wish to delete");
+        String searchName = sc.nextLine();
+        if (!db.searchSuperheroes(searchName).isEmpty()) {
+            System.out.println("Superheroes found!");
+                db.deleteSuperHero(searchName);
+        } else {
+            System.out.println("Nothing found");
+        }
+    }
     public int readInt() {
         while(!sc.hasNextInt()) {
             String text = sc.nextLine();

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="Added search function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SuperHero.java" afterDir="false" />
+    <list default="true" id="dbc64895-9a8d-46a6-965e-9cf92658359d" name="Changes" comment="Small updates and deleteSuperhero in progress">
       <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +42,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/Asger_studie/OneDrive/01_Datamatiker/Programmer/Kageopskrif_Final/Kageopskrift",
     "node.js.detected.package.eslint": "true",
@@ -73,7 +68,7 @@
       <workItem from="1663744994120" duration="9287000" />
       <workItem from="1663777680975" duration="3971000" />
       <workItem from="1663843212080" duration="13000" />
-      <workItem from="1663848452459" duration="4225000" />
+      <workItem from="1663848452459" duration="4578000" />
     </task>
     <task id="LOCAL-00001" summary="Added menu options">
       <created>1663072604825</created>
@@ -117,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663752540360</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Small updates and deleteSuperhero in progress">
+      <created>1663918822340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663918822340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +153,7 @@
     <MESSAGE value="Added database" />
     <MESSAGE value="workspace vil også committes" />
     <MESSAGE value="Added search function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search function" />
+    <MESSAGE value="Small updates and deleteSuperhero in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small updates and deleteSuperhero in progress" />
   </component>
 </project>
